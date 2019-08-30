@@ -1,0 +1,259 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "defaultDescription",
+    "version" : "0.1",
+    "title" : "defaultTitle"
+  },
+  "paths" : {
+    "/MaritimeWCF/APSShipService.svc/RESTful/GetShipDataByIHSLRorIMO" : {
+      "get" : {
+        "summary" : "Get Ship data from IHDLR or IMO",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "IHSLRorIMO",
+          "in" : "query",
+          "required" : false,
+          "type" : "string",
+          "x-example" : "9142631"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Definition generated from Swagger Inspector",
+            "schema" : {
+              "$ref" : "#/definitions/Model0"
+            }
+          }
+        },
+        "security" : [ {
+          "Secured" : [ ]
+        } ]
+      }
+    }
+  },
+  "securityDefinitions" : {
+    "Secured" : {
+      "type" : "basic"
+    }
+  },
+  "definitions" : {
+    "APSStatus" : {
+      "properties" : {
+        "CompletedOK" : {
+          "type" : "boolean"
+        },
+        "ErrorLevel" : {
+          "type" : "string"
+        },
+        "ErrorMessage" : {
+          "type" : "string"
+        },
+        "Guid" : {
+          "type" : "string"
+        },
+        "JobRunDate" : {
+          "type" : "string"
+        },
+        "RemedialAction" : {
+          "type" : "string"
+        },
+        "SystemDate" : {
+          "type" : "string"
+        },
+        "SystemVersion" : {
+          "type" : "string"
+        }
+      }
+    },
+    "DataSetVersion" : {
+      "properties" : {
+        "DataSetVersion" : {
+          "type" : "string"
+        }
+      }
+    },
+    "APSShipDetail" : {
+      "properties" : {
+        "BaleCapacity" : {
+          "type" : "string"
+        },
+        "BreadthExtreme" : {
+          "type" : "string"
+        },
+        "BreadthMoulded" : {
+          "type" : "string"
+        },
+        "CallSign" : {
+          "type" : "string"
+        },
+        "ClassificationSociety" : {
+          "type" : "string"
+        },
+        "CoreShipInd" : {
+          "type" : "string"
+        },
+        "DOCCompany" : {
+          "type" : "string"
+        },
+        "DOCCompanyCountryOfDomicile" : {
+          "type" : "string"
+        },
+        "DataSetVersion" : {
+          "$ref" : "#/definitions/DataSetVersion"
+        },
+        "DateOfBuild" : {
+          "type" : "string"
+        },
+        "Deadweight" : {
+          "type" : "string"
+        },
+        "Depth" : {
+          "type" : "string"
+        },
+        "Displacement" : {
+          "type" : "string"
+        },
+        "DocumentOfComplianceDOCCompanyCode" : {
+          "type" : "string"
+        },
+        "Draught" : {
+          "type" : "string"
+        },
+        "FlagName" : {
+          "type" : "string"
+        },
+        "GasCapacity" : {
+          "type" : "string"
+        },
+        "GrainCapacity" : {
+          "type" : "string"
+        },
+        "GrossTonnage" : {
+          "type" : "string"
+        },
+        "GroupBeneficialOwner" : {
+          "type" : "string"
+        },
+        "GroupBeneficialOwnerCompanyCode" : {
+          "type" : "string"
+        },
+        "GroupBeneficialOwnerCountryOfDomicile" : {
+          "type" : "string"
+        },
+        "IHSLRorIMOShipNo" : {
+          "type" : "string"
+        },
+        "InsulatedCapacity" : {
+          "type" : "string"
+        },
+        "KeelToMastHeight" : {
+          "type" : "string"
+        },
+        "LastUpdateDate" : {
+          "type" : "string"
+        },
+        "LengthBetweenPerpendicularsLBP" : {
+          "type" : "string"
+        },
+        "LengthOverallLOA" : {
+          "type" : "string"
+        },
+        "LengthRegistered" : {
+          "type" : "string"
+        },
+        "LightDisplacementTonnage" : {
+          "type" : "string"
+        },
+        "LiquidCapacity" : {
+          "type" : "string"
+        },
+        "MaritimeMobileServiceIdentityMMSINumber" : {
+          "type" : "string"
+        },
+        "NetTonnage" : {
+          "type" : "string"
+        },
+        "Operator" : {
+          "type" : "string"
+        },
+        "OperatorCompanyCode" : {
+          "type" : "string"
+        },
+        "OperatorCountryOfDomicileName" : {
+          "type" : "string"
+        },
+        "PassengerCapacity" : {
+          "type" : "string"
+        },
+        "PortOfRegistry" : {
+          "type" : "string"
+        },
+        "RegisteredOwner" : {
+          "type" : "string"
+        },
+        "RegisteredOwnerCode" : {
+          "type" : "string"
+        },
+        "RegisteredOwnerCountryOfDomicile" : {
+          "type" : "string"
+        },
+        "SegregatedBallastCapacity" : {
+          "type" : "string"
+        },
+        "ShipManager" : {
+          "type" : "string"
+        },
+        "ShipManagerCompanyCode" : {
+          "type" : "string"
+        },
+        "ShipManagerCountryOfDomicileName" : {
+          "type" : "string"
+        },
+        "ShipName" : {
+          "type" : "string"
+        },
+        "ShipStatus" : {
+          "type" : "string"
+        },
+        "Shipbuilder" : {
+          "type" : "string"
+        },
+        "ShipbuilderCompanyCode" : {
+          "type" : "string"
+        },
+        "ShipbuilderFullStyle" : {
+          "type" : "string"
+        },
+        "ShiptypeLevel5" : {
+          "type" : "string"
+        },
+        "Speed" : {
+          "type" : "string"
+        },
+        "TEU" : {
+          "type" : "string"
+        },
+        "TEUCapacity14THomogenous" : {
+          "type" : "string"
+        },
+        "YardNumber" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Model0" : {
+      "properties" : {
+        "APSStatus" : {
+          "$ref" : "#/definitions/APSStatus"
+        },
+        "APSShipDetail" : {
+          "$ref" : "#/definitions/APSShipDetail"
+        },
+        "shipCount" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    }
+  }
+}
